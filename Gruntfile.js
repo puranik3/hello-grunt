@@ -21,6 +21,9 @@ module.exports = function( grunt ) {
             }
         },
         jsbeautifier: {
+            options: {
+                config: "config/.jsbeautifyrc"
+            },
             default: {
                 src: ["server/**/*.js"],
                 options: {
@@ -39,7 +42,7 @@ module.exports = function( grunt ) {
     });
 
     grunt.loadNpmTasks( 'grunt-contrib-uglify' );
-    grunt.loadNpmTasks("grunt-jsbeautifier");
+    grunt.loadNpmTasks( 'grunt-jsbeautifier' );
     
     grunt.registerTask( 'default', ['uglify', 'jsbeautifier'] );
 };
