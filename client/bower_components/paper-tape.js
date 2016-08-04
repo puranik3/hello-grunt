@@ -2,6 +2,6 @@
 var helloGrunt = helloGrunt || {};
 helloGrunt.paper = helloGrunt.paper || {};
 
-paper.tape = paper.tape || function() {
+helloGrunt.paper.tape = helloGrunt.paper.tape || function() {
     console.log( "paper tape" );
 };

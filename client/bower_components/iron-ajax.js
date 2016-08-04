@@ -2,6 +2,6 @@
 var helloGrunt = helloGrunt || {};
 helloGrunt.iron = helloGrunt.iron || {};
 
-iron.ajax = iron.ajax || function() {
+helloGrunt.iron.ajax = helloGrunt.iron.ajax || function() {
     console.log( "iron ajax" );
 };
