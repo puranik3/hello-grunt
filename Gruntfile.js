@@ -20,6 +20,60 @@ module.exports = function( grunt ) {
                 ]
             }
         },
+
+        jscs: {
+            all: {
+                options: {
+                    config: 'config/.jscs.json',
+                    fix: false
+                },
+                files: {
+                    src: [
+                        'common/**/*.js',
+                        'client/**/*.js',
+                        'server/**/*.js',
+                        'tests/*.js',
+                        'tests/**/*.js',
+                        'Gruntfile.js'
+                    ]
+                }
+            },
+            fixtest: {
+                options: {
+                    config: 'config/.jscs.json',
+                    fix: true
+                },
+                files: {
+                    src: ['server/middleware/**/*.js']
+                }
+            },
+            test: {
+                options: {
+                    config: 'config/.jscs.json',
+                    fix: false
+                },
+                files: {
+                    src: ['server/middleware/**/*.js']
+                }
+            },
+            fixall: {
+                options: {
+                    config: 'config/.jscs.json',
+                    fix: true
+                },
+                files: {
+                    src: [
+                        'common/**/*.js',
+                        'client/**/*.js',
+                        'server/**/*.js',
+                        'tests/*.js',
+                        'tests/**/*.js',
+                        'Gruntfile.js'
+                    ]
+                }
+            }
+        },
+
         jsbeautifier: {
             options: {
                 config: "config/.jsbeautifyrc"

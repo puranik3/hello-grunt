@@ -24,5 +24,5 @@ You can find below a list for some popular IDEs. You can find additional pointer
 | SublimeText |[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)|  
 
 ## TODO
-  1. Explore if sharing of config/.jsbeautifyrc between editor and Grunt
+  1. Explore if sharing of config/.jsbeautifyrc between editor and Grunt is possible
   2. Links for other IDEs and installation notes
