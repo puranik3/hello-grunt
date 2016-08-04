@@ -16,11 +16,11 @@ Assuming you have cloned this project, opened a terminal, and have the working d
 JS, CSS and HTML formatting is enforced using the [jsbeautifier plugin for Grunt](https://github.com/vkadam/grunt-jsbeautifier/). This does essentially what [jsbeautifier.org](
 [jsbeautifier.org](http://jsbeautifier.org/)) does on the web - style JS (as also HTML and CSS). Most major IDEs support formatting as per jsbeautifier.org. Some may require plugins. VSCode supports formatting as per jsbeautifier.org but does not provide a means to configure .jsbeautifyrc without a plugin.  
 You can find below a list for some popular IDEs. You can find additional pointers at [jsbeautifier.org/] (scroll to the bottom of the home page).
-|IDE     |Link                                     |
-|--------|-----------------------------------------|
-| VSCode |[https://github.com/HookyQR/VSCodeBeautify]() or <br/> [https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter]()|
-| Atom |Native support - https://github.com/Glavin001/atom-beautify/blob/master/docs/options.md|
-| SublimeText |[https://github.com/victorporof/Sublime-HTMLPrettify]()|
+|IDE     |Link                                     |  
+|--------|-----------------------------------------|  
+| VSCode |[VSCodeBeautify](|https://github.com/HookyQR/VSCodeBeautify ) or <br/> [vscode-JS-CSS-HTML-formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)|  
+| Atom |[Native support in Atom](https://github.com/Glavin001/atom-beautify/blob/master/docs/options.md)|  
+| SublimeText |[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)|  
 
 ## TODO
   1. Explore if sharing of config/.jsbeautifyrc between editor and Grunt
