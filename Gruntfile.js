@@ -1,6 +1,6 @@
-module.exports = function( grunt ) {
+module.exports = function(grunt) {
     grunt.initConfig({
-        pkg: grunt.file.readJSON( 'package.json' ),
+        pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <% grunt.template.today( "yyyy-mm-dd" ) %> */\n'
@@ -21,82 +21,63 @@ module.exports = function( grunt ) {
             }
         },
 
-        jscs: {
-            all: {
-                options: {
-                    config: 'config/.jscs.json',
-                    fix: false
-                },
-                files: {
-                    src: [
-                        'common/**/*.js',
-                        'client/**/*.js',
-                        'server/**/*.js',
-                        'tests/*.js',
-                        'tests/**/*.js',
-                        'Gruntfile.js'
-                    ]
-                }
-            },
-            fixtest: {
-                options: {
-                    config: 'config/.jscs.json',
-                    fix: true
-                },
-                files: {
-                    src: ['server/middleware/**/*.js']
-                }
-            },
-            test: {
-                options: {
-                    config: 'config/.jscs.json',
-                    fix: false
-                },
-                files: {
-                    src: ['server/middleware/**/*.js']
-                }
-            },
-            fixall: {
-                options: {
-                    config: 'config/.jscs.json',
-                    fix: true
-                },
-                files: {
-                    src: [
-                        'common/**/*.js',
-                        'client/**/*.js',
-                        'server/**/*.js',
-                        'tests/*.js',
-                        'tests/**/*.js',
-                        'Gruntfile.js'
-                    ]
-                }
-            }
-        },
-
         jsbeautifier: {
             options: {
-                config: "config/.jsbeautifyrc"
+                config: 'config/.jsbeautifyrc'
             },
             default: {
-                src: ["server/**/*.js"],
+                src: ['server/**/*.js', 'Gruntfile.js'],
                 options: {
                     js: {
                         indentSize: 4
                     }
                 }
             },
-            "git-pre-commit": {
-                src: ["server/**/*.js"],
+            'git-pre-commit': {
+                src: ['server/**/*.js', 'Gruntfile.js'],
                 options: {
-                    mode:"VERIFY_ONLY"
+                    mode: 'VERIFY_ONLY'
+                }
+            }
+        },
+
+        jscs: {
+            all: {
+                options: {
+                    config: 'config/jscs.json',
+                    fix: false
+                },
+                files: {
+                    src: [
+                        'common/**/*.js',
+
+                        'server/**/*.js',
+
+                        'Gruntfile.js'
+                    ]
+                }
+            },
+            fixall: {
+                options: {
+                    config: 'config/jscs.json',
+                    fix: true
+                },
+                files: {
+                    src: [
+                        'common/**/*.js',
+
+                        'server/**/*.js',
+
+                        'Gruntfile.js'
+                    ]
                 }
             }
         }
     });
 
-    grunt.loadNpmTasks( 'grunt-contrib-uglify' );
-    grunt.loadNpmTasks( 'grunt-jsbeautifier' );
-    
-    grunt.registerTask( 'default', ['uglify', 'jsbeautifier'] );
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-jscs');
+    grunt.loadNpmTasks('grunt-jsbeautifier');
+
+    grunt.registerTask('default', ['uglify', 'jscs:all']);
 };

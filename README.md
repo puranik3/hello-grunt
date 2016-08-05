@@ -23,6 +23,9 @@ You can find below a list for some popular IDEs. You can find additional pointer
 | Atom |[Native support in Atom](https://github.com/Glavin001/atom-beautify/blob/master/docs/options.md)|  
 | SublimeText |[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)|  
 
+# Using jscs
+jscs is an alternative to using jsbeautifier. It enjoys good community support as well. It has recently been merged with the ESLint project.  
+
 ## TODO
   1. Explore if sharing of config/.jsbeautifyrc between editor and Grunt is possible
   2. Links for other IDEs and installation notes
