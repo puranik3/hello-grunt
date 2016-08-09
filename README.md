@@ -35,6 +35,6 @@ Minification of css files is done using [cssmin plugin for Grunt](https://www.np
 
 ## TODO
   - Explore concatentation of JS and CSS files - these would likely create conflicts in JS and CSS. What is the best way to handle these conflicts?
-  - The cssmin:build task seems to work fine while creating a 1-1 mapped .min.css file. The options and configuration of this task need to be validated through a better understanding of cssmin usage though.
+  - The cssmin:build task seems to work fine while creating 1-1 mapped .min.css files. The options and configuration of this task need to be validated through a better understanding of cssmin usage though.
   - Explore if sharing of config/.jsbeautifyrc between editor and Grunt is possible
   - Links for other IDEs and installation notes
