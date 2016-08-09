@@ -31,9 +31,10 @@ Minification of js files is done using [uglify plugin for Grunt](https://www.npm
 To generate a minified file per js file, use this plugin task in conjunction with [grunt.file.expandMapping method](http://gruntjs.com/api/grunt.file#grunt.file.expandmapping).
 
 # Using cssmin
-Minification of css files is done using [cssmin plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-cssmin). This is based on the node module [clean-css](https://github.com/jakubpawlowicz/clean-css).
+Minification of css files is done using [cssmin plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-cssmin). This is based on the node module [clean-css](https://github.com/jakubpawlowicz/clean-css).  
 
 ## TODO
   - Explore concatentation of JS and CSS files - these would likely create conflicts in JS and CSS. What is the best way to handle these conflicts?
+  - The cssmin:build task seems to work fine while creating a 1-1 mapped .min.css file. The options and configuration of this task need to be validated through a better understanding of cssmin usage though.
   - Explore if sharing of config/.jsbeautifyrc between editor and Grunt is possible
   - Links for other IDEs and installation notes

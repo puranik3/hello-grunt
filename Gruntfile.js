@@ -20,7 +20,17 @@ module.exports = function(grunt) {
         },
 
         cssmin: {
-            
+            build: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'client/styles',
+                        src: ['**/*.css', '!*.min.css'],
+                        dest: 'build/client/styles',
+                        ext: '.min.css'
+                    }
+                ]
+            }
         },
 
         jsbeautifier: {
