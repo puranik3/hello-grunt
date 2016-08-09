@@ -1,0 +1,16 @@
+.iron-ajax {
+    font-size: 14px;
+    color: black;
+}
+
+.iron-ajax-btn {
+    display: block;
+    color: red;
+}
+
+.iron-ajax-btn span.btn-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    float: left;
+}
