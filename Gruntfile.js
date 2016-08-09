@@ -6,18 +6,11 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <% grunt.template.today( "yyyy-mm-dd" ) %> */\n'
             },
             build: {
-                // @todo
-                // Need to figure out how to generate <file>.min.js from <file>.js automatically
-                files: [
-                    {
-                        src: 'client/*.js',
-                        dest: 'build/client/client.min.js'
-                    },
-                    {
-                        src: 'client/bower_components/*.js',
-                        dest: 'build/client/bower_components.min.js'
+                files: grunt.file.expandMapping(['client/*.js', 'client/bower_components/*.js'], 'build/', {
+                    rename: function( destBase, destPath ) {
+                        return destBase + destPath.replace('.js', '.min.js');
                     }
-                ]
+                })
             }
         },
 
