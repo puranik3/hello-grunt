@@ -1,3 +1,4 @@
 function foo() {
-    console.log( 'hello, foo' );
+    var message = 'hello, foo';
+    console.log( message );
 };

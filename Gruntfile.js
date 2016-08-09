@@ -1,14 +1,19 @@
+var path = require( 'path' );
+
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> <% grunt.template.today( "yyyy-mm-dd" ) %> */\n'
+                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+                mangle: true,
+                sourceMap: true
             },
             build: {
-                files: grunt.file.expandMapping(['client/**/*.js'], 'build/', {
-                    rename: function( destBase, destPath ) {
-                        return destBase + destPath.replace('.js', '.min.js');
+                files: grunt.file.expandMapping(['client/**/*.js'], 'build', {
+                    rename: function( dest, matchedSrcPath ) {
+                        matchedSrcPath = matchedSrcPath.replace('.js', '.min.js');
+                        return path.join(dest, matchedSrcPath);
                     }
                 })
             }
