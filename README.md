@@ -31,7 +31,7 @@ Minification of js files is done using [uglify plugin for Grunt](https://www.npm
 To generate a minified file per js file, use this plugin task in conjunction with [grunt.file.expandMapping method](http://gruntjs.com/api/grunt.file#grunt.file.expandmapping).
 
 # Using cssmin
-Minification of js files is done using [cssmin plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-cssmin). This is based on the node module [clean-css](https://github.com/jakubpawlowicz/clean-css).
+Minification of css files is done using [cssmin plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-cssmin). This is based on the node module [clean-css](https://github.com/jakubpawlowicz/clean-css).
 
 ## TODO
   - Explore concatentation of JS and CSS files - these would likely create conflicts in JS and CSS. What is the best way to handle these conflicts?
