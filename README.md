@@ -27,8 +27,13 @@ You can find below a list for some popular IDEs. You can find additional pointer
 jscs is an alternative to using jsbeautifier. It enjoys good community support as well. It has recently been merged with the ESLint project.  
 
 # Using uglify
-Minification of js files is done using [uglify plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-uglify). To generate a minified file per js file, use this plugin task in conjunction with [grunt.file.expandMapping method](http://gruntjs.com/api/grunt.file#grunt.file.expandmapping).
+Minification of js files is done using [uglify plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-uglify). This is based on the node module [uglify-js](https://github.com/mishoo/UglifyJS2).  
+To generate a minified file per js file, use this plugin task in conjunction with [grunt.file.expandMapping method](http://gruntjs.com/api/grunt.file#grunt.file.expandmapping).
+
+# Using cssmin
+Minification of js files is done using [cssmin plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-cssmin). This is based on the node module [clean-css](https://github.com/jakubpawlowicz/clean-css).
 
 ## TODO
-  1. Explore if sharing of config/.jsbeautifyrc between editor and Grunt is possible
-  2. Links for other IDEs and installation notes
+  - Explore concatentation of JS and CSS files - these would likely create conflicts in JS and CSS. What is the best way to handle these conflicts?
+  - Explore if sharing of config/.jsbeautifyrc between editor and Grunt is possible
+  - Links for other IDEs and installation notes

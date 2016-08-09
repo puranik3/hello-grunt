@@ -19,6 +19,10 @@ module.exports = function(grunt) {
             }
         },
 
+        cssmin: {
+            
+        },
+
         jsbeautifier: {
             options: {
                 config: 'config/.jsbeautifyrc'
@@ -74,8 +78,9 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-jsbeautifier');
 
-    grunt.registerTask('default', ['uglify', 'jscs:all']);
+    grunt.registerTask('default', ['uglify', 'cssmin', 'jscs:all']);
 };
