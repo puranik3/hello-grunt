@@ -26,6 +26,9 @@ You can find below a list for some popular IDEs. You can find additional pointer
 # Using jscs
 jscs is an alternative to using jsbeautifier. It enjoys good community support as well. It has recently been merged with the ESLint project.  
 
+# Using uglify
+Minification of js files is done using [uglify plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-uglify). To generate a minified file per js file, use this plugin task in conjunction with [grunt.file.expandMapping method](http://gruntjs.com/api/grunt.file#grunt.file.expandmapping).
+
 ## TODO
   1. Explore if sharing of config/.jsbeautifyrc between editor and Grunt is possible
   2. Links for other IDEs and installation notes

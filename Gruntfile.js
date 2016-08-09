@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <% grunt.template.today( "yyyy-mm-dd" ) %> */\n'
             },
             build: {
-                files: grunt.file.expandMapping(['client/*.js', 'client/bower_components/*.js'], 'build/', {
+                files: grunt.file.expandMapping(['client/**/*.js'], 'build/', {
                     rename: function( destBase, destPath ) {
                         return destBase + destPath.replace('.js', '.min.js');
                     }
