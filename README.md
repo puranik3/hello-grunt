@@ -33,6 +33,9 @@ To generate a minified file per js file, use this plugin task in conjunction wit
 # Using cssmin
 Minification of css files is done using [cssmin plugin for Grunt](https://www.npmjs.com/package/grunt-contrib-cssmin). This is based on the node module [clean-css](https://github.com/jakubpawlowicz/clean-css).  
 
+# Using processhtml
+We can process HTML files to replace *.js includes with *.min.js includes using [processhtml plugin for Grunt](https://www.npmjs.com/package/grunt-processhtml). This is based on the node module [node-htmlprocessor](https://github.com/dciccale/node-htmlprocessor)
+
 ## TODO
   - Explore Grunt task to automatically replace references of uglify processed *.js with built *.min.js.  
     References:  
