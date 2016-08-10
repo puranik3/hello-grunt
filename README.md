@@ -37,9 +37,8 @@ Minification of css files is done using [cssmin plugin for Grunt](https://www.np
 We can process HTML files to replace *.js includes with *.min.js includes using [processhtml plugin for Grunt](https://www.npmjs.com/package/grunt-processhtml). This is based on the node module [node-htmlprocessor](https://github.com/dciccale/node-htmlprocessor)
 
 ## TODO
-  - Explore Grunt task to automatically replace references of uglify processed *.js with built *.min.js.  
-    References:  
-    - https://www.npmjs.com/package/grunt-processhtml
+  - Explore Grunt task to automatically replace references of uglify processed *.js with built *.min.js. Right now, there seems to be 2 popular alternatives - [grunt-processhtml](https://www.npmjs.com/package/grunt-processhtml) and [grunt-usemin](https://www.npmjs.com/package/grunt-usemin).    
+    Additional References:  
     - https://github.com/yeoman/grunt-usemin/issues/171
     - http://stackoverflow.com/questions/16761272/how-to-configure-grunt-to-replace-bower-dependencies-by-its-minified-versions
   - Explore concatentation of JS and CSS files - these would likely create conflicts in JS and CSS. What is the best way to handle these conflicts?
