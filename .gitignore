@@ -1,3 +1,5 @@
 .vscode
 node_modules/
+hello-usemin/node_modules/
+hello-usemin/build/
 build/

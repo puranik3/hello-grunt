@@ -1,0 +1,16 @@
+.paper-tape {
+    font-size: 14px;
+    color: black;
+}
+
+.paper-tape-banner {
+    display: block;
+    color: red;
+}
+
+.paper-tape-banner span.message {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
