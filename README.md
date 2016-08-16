@@ -24,11 +24,27 @@ You can find below a list for some popular IDEs. You can find additional pointer
       <th>Link</th>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <td>VSCode</td>
+      <td>
+        [VSCodeBeautify](https://github.com/HookyQR/VSCodeBeautify) or <br/> [vscode-JS-CSS-HTML-formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)
+      </td>
+    </tr>
+    <tr>
+      <td>Atom</td>
+      <td>
+        [Native support in Atom](https://github.com/Glavin001/atom-beautify/blob/master/docs/options.md)
+      </td>
+    </tr>
+    <tr>
+      <td>SublimeText</td>
+      <td>
+        [Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)
+      </td>
+    </tr>
+  </tbody>
 </table>
-|--------|-----------------------------------------|  
-| VSCode |[VSCodeBeautify](https://github.com/HookyQR/VSCodeBeautify) or <br/> [vscode-JS-CSS-HTML-formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)|  
-| Atom |[Native support in Atom](https://github.com/Glavin001/atom-beautify/blob/master/docs/options.md)|  
-| SublimeText |[Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)|  
 
 # Using jscs
 jscs is an alternative to using jsbeautifier. It enjoys good community support as well. It has recently been merged with the ESLint project.  
