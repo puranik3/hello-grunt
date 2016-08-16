@@ -28,19 +28,20 @@ You can find below a list for some popular IDEs. You can find additional pointer
     <tr>
       <td>VSCode</td>
       <td>
-        [VSCodeBeautify](https://github.com/HookyQR/VSCodeBeautify) or <br/> [vscode-JS-CSS-HTML-formatter](https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter)
+        <a href="https://github.com/HookyQR/VSCodeBeautify">VSCodeBeautify</a> or <br/>
+        <a href="https://marketplace.visualstudio.com/items?itemName=lonefy.vscode-JS-CSS-HTML-formatter">vscode-JS-CSS-HTML-formatter</a>
       </td>
     </tr>
     <tr>
       <td>Atom</td>
       <td>
-        [Native support in Atom](https://github.com/Glavin001/atom-beautify/blob/master/docs/options.md)
+        <a href="https://github.com/Glavin001/atom-beautify/blob/master/docs/options.md">Native support in Atom</a>
       </td>
     </tr>
     <tr>
       <td>SublimeText</td>
       <td>
-        [Sublime-HTMLPrettify](https://github.com/victorporof/Sublime-HTMLPrettify)
+        <a href="https://github.com/victorporof/Sublime-HTMLPrettify">Sublime-HTMLPrettify</a>
       </td>
     </tr>
   </tbody>
