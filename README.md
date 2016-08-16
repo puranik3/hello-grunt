@@ -47,9 +47,13 @@ usemin seems a better option than processhtml. I feel this is due to the followi
 
 The preference for usemin is also echoed by the far higher numbers of downloads (when compared to processhtml).
 
+# Inlining web component includes
+Web components are included using html includes. The [vulcanize node module](https://www.npmjs.com/package/vulcanize) combines the web components included in a targeted HTML documents into a single one that may be included instead of the original includes. There exists a [Grunt plugin to create the 'vulcanization' task](https://www.npmjs.com/package/grunt-vulcanize).  
+
 # TODOs
   - Explore Grunt task to automatically replace references of uglify processed \*.js with built \*.min.js. libs2min seems to do so with some restrictions on where the minified files should exist. As of now, I've not figured out any candidate that does this task seamlessly.   
     Additional References:  
+    - https://github.com/hemanth/grunt-usemin-example
     - https://github.com/yeoman/grunt-usemin/issues/171
     - http://stackoverflow.com/questions/16761272/how-to-configure-grunt-to-replace-bower-dependencies-by-its-minified-versions
     - https://github.com/Rauno56/grunt-usemin/blob/master/lib/config/libs2min.js#L26
