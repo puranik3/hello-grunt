@@ -47,7 +47,7 @@ usemin seems a better option than processhtml. I feel this is due to the followi
 
 The preference for usemin is also echoed by the far higher numbers of downloads (when compared to processhtml).
 
-# Inlining web component includes
+# Combining web component includes into single include file
 Web components are included using html includes. The [vulcanize node module](https://www.npmjs.com/package/vulcanize) combines the web components included in a targeted HTML documents into a single one that may be included instead of the original includes. There exists a [Grunt plugin to create the 'vulcanization' task](https://www.npmjs.com/package/grunt-vulcanize).  
 
 # TODOs
