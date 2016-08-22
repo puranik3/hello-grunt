@@ -47,6 +47,12 @@ You can find below a list for some popular IDEs. You can find additional pointer
   </tbody>
 </table>
 
+# Using fixmyjs
+If you are using a jshint task, an additional sizmyjs can be useful. This automatically fixes jshint errors where possible. Foe further details check out these links
+- https://github.com/jshint/fixmyjs
+- https://github.com/jonschlinkert/grunt-fixmyjs
+- https://www.npmjs.com/package/grunt-fixmyjs
+
 # Using jscs
 jscs is an alternative to using jsbeautifier. It enjoys good community support as well. It has recently been merged with the ESLint project.  
 
