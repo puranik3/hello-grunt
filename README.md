@@ -79,6 +79,7 @@ The preference for usemin is also echoed by the far higher numbers of downloads 
 
 # Combining web component includes into single include file
 Web components are included using html includes. The [vulcanize node module](https://www.npmjs.com/package/vulcanize) combines the web components included in a targeted HTML documents into a single one that may be included instead of the original includes. There exists a [Grunt plugin to create the 'vulcanization' task](https://www.npmjs.com/package/grunt-vulcanize).  
+There exists a Gulp plugin (from Polymer project itself) called [polybuild](https://github.com/PolymerLabs/polybuild) that combines popular tasks for Polymer apps into one. However there is not Grunt equivalent for the same (although a similar one is [grunt-minify- polymer](https://github.com/KK578/grunt-minify-polymer)). For now, the tasks carried out by the polybuild can be carried out as individual Grunt tasks.
 
 # TODOs
   - Explore Grunt task to automatically replace references of uglify processed \*.js with built \*.min.js. libs2min seems to do so with some restrictions on where the minified files should exist. As of now, I've not figured out any candidate that does this task seamlessly.   
